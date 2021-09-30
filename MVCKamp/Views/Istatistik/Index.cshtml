@@ -1,9 +1,9 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
-<br /><br />    
+<br />
+<br />
 <h2>İstatistik</h2>
 
 <p>Ödev 2/4</p>
@@ -35,7 +35,7 @@
 
             <div class="info-box-content">
                 <span class="info-box-text">Yazılım Kategorisindeki Başlık Sayısı</span>
-                <span class="info-box-number">XX</span>
+                <span class="info-box-number">@ViewBag.yazilimBasliklari</span>
 
                 <div class="progress">
                     <div class="progress-bar" style="width: 100%"></div>
@@ -54,7 +54,7 @@
 
             <div class="info-box-content">
                 <span class="info-box-text">En Fazla Başlığı Bulunan Kategori</span>
-                <span class="info-box-number">XX</span>
+                <span class="info-box-number">@ViewBag.EnFazlaBaslik</span>
 
                 <div class="progress">
                     <div class="progress-bar" style="width: 100%"></div>
@@ -67,7 +67,7 @@
         </div>
         <!-- /.info-box -->
     </div>
-    
+
 </div>
 
 <div class="row>
@@ -78,7 +78,9 @@
 
             <div class="info-box-content">
                 <span class="info-box-text">İçinde "A" Geçen Yazarlar</span>
-                <span class="info-box-number">XX</span>
+                <span class="info-box-number">
+                    @ViewBag.AolanYazarlar
+                </span>
 
                 <div class="progress">
                     <div class="progress-bar" style="width: 100%"></div>
@@ -91,7 +93,7 @@
         </div>
         <!-- /.info-box -->
     </div>
-  
+
 </div>
 
 <div class="row">
@@ -102,7 +104,7 @@
 
             <div class="info-box-content">
                 <span class="info-box-text">Kategori Durumu True Olanlar</span>
-                <span class="info-box-number">XX</span>
+                <span class="info-box-number">@ViewBag.TrueOlanlar</span>
 
                 <div class="progress">
                     <div class="progress-bar" style="width: 100%"></div>
@@ -122,7 +124,7 @@
 
             <div class="info-box-content">
                 <span class="info-box-text">Kategori Durumu False Olanlar</span>
-                <span class="info-box-number">XX</span>
+                <span class="info-box-number">@ViewBag.FalseOlanlar</span>
 
                 <div class="progress">
                     <div class="progress-bar" style="width: 100%"></div>
