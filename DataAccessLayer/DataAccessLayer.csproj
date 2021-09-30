@@ -60,10 +60,12 @@
     <Compile Include="Abstract\IWriterDal.cs" />
     <Compile Include="Concrete\Context.cs" />
     <Compile Include="Concrete\Repositories\GenericRepository.cs" />
-    <Compile Include="Migrations\202109220809489_mig1.cs" />
-    <Compile Include="Migrations\202109220809489_mig1.designer.cs">
-      <DependentUpon>202109220809489_mig1.cs</DependentUpon>
-    </Compile>
+    <Compile Include="EntityFreamework\EFAboutDAL.cs" />
+    <Compile Include="EntityFreamework\EFCategoryDAL.cs" />
+    <Compile Include="EntityFreamework\EFContactDAL.cs" />
+    <Compile Include="EntityFreamework\EFContentDAL.cs" />
+    <Compile Include="EntityFreamework\EFHeadingDal.cs" />
+    <Compile Include="EntityFreamework\EFWriterDAL.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -76,11 +78,6 @@
       <Project>{6b51d572-4fe5-460b-aeb8-4e361b90fc0e}</Project>
       <Name>EntityLayer</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\202109220809489_mig1.resx">
-      <DependentUpon>202109220809489_mig1.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

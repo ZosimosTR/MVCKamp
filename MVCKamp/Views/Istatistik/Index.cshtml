@@ -1,0 +1,139 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<br /><br />    
+<h2>İstatistik</h2>
+
+<p>Ödev 2/4</p>
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="info-box bg-info">
+            <span class="info-box-icon"><i class="far fa-bookmark"></i></span>
+
+            <div class="info-box-content">
+                <span class="info-box-text">Toplam Kategori Sayısı</span>
+                <span class="info-box-number">@ViewBag.TopKategoriSayisi</span>
+
+                <div class="progress">
+                    <div class="progress-bar" style="width: 100%"></div>
+                </div>
+                <span class="progress-description">
+                    Ödev 1.madde
+                </span>
+            </div>
+            <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+    </div>
+    <!-- /.col -->
+    <div class="col-md-4">
+        <div class="info-box bg-success">
+            <span class="info-box-icon"><i class="far fa-thumbs-up"></i></span>
+
+            <div class="info-box-content">
+                <span class="info-box-text">Yazılım Kategorisindeki Başlık Sayısı</span>
+                <span class="info-box-number">XX</span>
+
+                <div class="progress">
+                    <div class="progress-bar" style="width: 100%"></div>
+                </div>
+                <span class="progress-description">
+                    Ödev 2.madde
+                </span>
+            </div>
+            <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+    </div>
+    <div class="col-md-4">
+        <div class="info-box bg-danger">
+            <span class="info-box-icon"><i class="fas fa-comments"></i></span>
+
+            <div class="info-box-content">
+                <span class="info-box-text">En Fazla Başlığı Bulunan Kategori</span>
+                <span class="info-box-number">XX</span>
+
+                <div class="progress">
+                    <div class="progress-bar" style="width: 100%"></div>
+                </div>
+                <span class="progress-description">
+                    Ödev 4.madde
+                </span>
+            </div>
+            <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+    </div>
+    
+</div>
+
+<div class="row>
+    <!-- /.col -->
+    <div class="col-md-12">
+        <div class="info-box bg-warning">
+            <span class="info-box-icon"><i class="far fa-calendar-alt"></i></span>
+
+            <div class="info-box-content">
+                <span class="info-box-text">İçinde "A" Geçen Yazarlar</span>
+                <span class="info-box-number">XX</span>
+
+                <div class="progress">
+                    <div class="progress-bar" style="width: 100%"></div>
+                </div>
+                <span class="progress-description">
+                    Ödev 3.madde
+                </span>
+            </div>
+            <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+    </div>
+  
+</div>
+
+<div class="row">
+    <!-- /.col -->
+    <div class="col-md-6">
+        <div class="info-box bg-success">
+            <span class="info-box-icon"><i class="far fa-calendar-alt"></i></span>
+
+            <div class="info-box-content">
+                <span class="info-box-text">Kategori Durumu True Olanlar</span>
+                <span class="info-box-number">XX</span>
+
+                <div class="progress">
+                    <div class="progress-bar" style="width: 100%"></div>
+                </div>
+                <span class="progress-description">
+                    Ödev 4.madde
+                </span>
+            </div>
+            <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+    </div>
+    <!-- /.col -->
+    <div class="col-md-6">
+        <div class="info-box bg-danger">
+            <span class="info-box-icon"><i class="fas fa-comments"></i></span>
+
+            <div class="info-box-content">
+                <span class="info-box-text">Kategori Durumu False Olanlar</span>
+                <span class="info-box-number">XX</span>
+
+                <div class="progress">
+                    <div class="progress-bar" style="width: 100%"></div>
+                </div>
+                <span class="progress-description">
+                    Ödev 4.madde
+                </span>
+            </div>
+            <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+    </div>
+    <!-- /.col -->
+</div>

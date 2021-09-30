@@ -1,0 +1,40 @@
+﻿@using EntityLayer.Concrete
+@model List<Category> 
+@{
+    Layout = null;
+}
+
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<h3>MVC Kamp Kategori Tablo Örneği</h3>
+<br />
+<br />
+<br />
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Kategori Adı</th>
+            <th>Açıklaması</th>
+            <th>Durumu</th>
+            <th>Güncelle</th>
+            <th>Sil</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.CategoryId</td>
+                <td>@item.CategoryName</td>
+                <td>@item.CategoryDescription</td>
+                <td>@item.CategoryStatus</td>
+                <td><a class="btn btn-success">Güncelle</a></td>
+                <td><a class="btn btn-danger">Sil</a></td>
+            </tr>
+        }
+
+    </tbody>
+
+</table>
+<br/>
+<a href="/Category/AddCategory" class="btn btn-info">Yeni Kategori</a>
